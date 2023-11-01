@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Miniräknare</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text" id="display" readonly>
+        </div>
+
+        <div class="buttons">
+            <button class="span-2 clear" onclick="clr()">C</button>
+            <button class="clear" onclick="backspace()">DEL</button>
+            <button class="operator" onclick="dis('/')">÷</button>
+
+            <button class="number" onclick="dis('7')">7</button>
+            <button class="number" onclick="dis('8')">8</button>
+            <button class="number" onclick="dis('9')">9</button>
+            <button class="operator" onclick="dis('*')">x</button>
+
+            <button class="number" onclick="dis('4')">4</button>
+            <button class="number" onclick="dis('5')">5</button>
+            <button class="number" onclick="dis('6')">6</button>
+            <button class="operator" onclick="dis('-')">-</button>
+
+            <button class="number" onclick="dis('1')">1</button>
+            <button class="number" onclick="dis('2')">2</button>
+            <button class="number" onclick="dis('3')">3</button>
+            <button class="operator" onclick="dis('+')">+</button>
+            
+
+            <button class="span-2 number" onclick="dis('0')">0</button>
+            <button class="number" onclick="dis('.')">.</button>
+            <button class="operator" onclick="solve()">=</button>
+        </div>
+
+        <script src="scripts/script.js"></script>
+    </div>
+</body>
+
+</html>
